@@ -1,0 +1,344 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #17181a;
+}
+
+body {
+background-color: white;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+#logo {
+    color: black;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.nav-header {
+    min-height: 10vh;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0rem;
+    position: relative;
+}
+
+.line1,
+.line2 {
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: black;
+    pointer-events: none;
+}
+
+.slide {
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-desc {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 3.5rem;
+    position: relative;
+    z-index: 2;
+    width: 60%;
+}
+
+.hero-img-2 {
+    flex: 1;
+    overflow: hidden;
+    width: 90%;
+    border-radius: 0.3rem;
+
+}
+
+.hero-img {
+    color: black;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    padding-bottom: 4rem;
+}
+
+.hero-img-2 h1{
+    
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-img p{
+    font-size: 1.7rem;
+   
+}
+
+.hero-img p .span1{
+    color: rgb(232, 123, 6);
+    font-size: 2.5rem;
+
+}
+
+.hero-img h1{
+    font-size: 5rem;
+}
+
+.hero-img-2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hero-img-2 img:hover {
+ transform: scale(1.5);
+ cursor: pointer;
+ transition: 0.5s;
+}
+
+.hero-desc h2 {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero-desc p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4rem;
+}
+
+.hero-desc p span{
+    color: rgb(232, 123, 6);
+}
+
+.explore {
+    padding: 1rem 2rem;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.explore:hover {
+    background-color: rgb(232, 123, 6);
+    color: #17181a;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background: #17181a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 5%;
+}
+
+.burger {
+    cursor: pointer;
+    
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* semi-transparent white background */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.8s ease-in-out;
+    z-index: 100;
+    overflow-y: auto;
+    line-height: 1.8rem;
+    font-weight: 600;
+    font-size: 2rem;
+    
+}
+
+
+.nav-links li {
+    margin-right: 2rem;
+    list-style: none;
+    line-height: 1.8rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.nav-links a:hover{
+    color: rgb(232, 123, 6);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+ .nav-active {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background-color: rgb(255, 255, 255); /* semi-transparent white background */
+    transform: translateX(0%);
+    transition: transform 0.8s ease-in-out;
+    z-index: 100;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+} 
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact .contact-info{
+    margin-bottom: 2rem;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact a{
+    color: #17181a;
+    text-decoration: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 2rem;
+    transition: 0.5s;
+}
+
+.contact a:hover{
+color: rgb(232, 123, 6);
+transition: 0.5s;
+
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+ footer {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+} 
+
+.footer-span{
+    color: rgb(232, 123, 6);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.view-btn{
+    border: solid 1px black;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+
+.view-btn::before{
+    content: "View";
+    position:absolute;
+    right:0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    transition: 0.5s;
+    background-color:rgba(232, 123, 6, 0.919) ;
+    color: white;
+    /* z-index: -0.5;  */
+    padding-top: 0.5rem;
+    overflow: hidden;
+}
+
+.view-btn:hover{
+    transition: 0.5s;
+    color: white;
+    overflow: hidden;
+    background-color: #17181a;
+}
+
+
+.view-btn:hover::before{
+ width: 100%;
+ overflow: hidden;
+ 
+} 
+
+/* .reveal-img ,*/ .reveal-text{ 
+    position: absolute;
+    width: 100%;
+    height: 150%;
+     background: #17181a21; 
+    left: 0;
+    top: -15%;
+}
